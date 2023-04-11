@@ -1,0 +1,23 @@
+.main{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: grey;
+}
+
+.titlu{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+.Form{
+    padding-top: 20px;
+    text-align: center;
+}
+.Form .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::after{
+    border-bottom-color:hsla(23, 100%, 50%, 0.951);
+}
+.Form .mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
+	color: hsla(23, 100%, 50%, 0.951) !important;
+}

@@ -1,22 +1,22 @@
 <nav class="navbar">
-    <a href = "#" class = "bars">
-        <span class="bar1"></span>
-        <span class="bar2"></span>
-        <span class="bar3"></span>
+    <a ahref="#" class = "bars" target ="_blank" (click)="toggleActive()">
+        <span [className]="isActive? 'bar1 isActive' : 'bar1'" ></span>
+        <span [className]="isActive? 'bar2 isActive' : 'bar2'"  ></span>
+        <span [className]="isActive? 'bar3 isActive' : 'bar3'"  ></span>
     </a>
     <a id="logo" href="">NeXT</a>
-    <ul class="links">
+    <ul class="links" [className]="isActive? 'links isActive' : 'links'">
         <li class="links_item">
-            <a href ="" >Home</a>
+            <a href="">Home</a>
         </li>
         <li class="links_item">
-            <a href="">Tech</a>
+            <a href = "inventory" (click)="goToInventory()">Inventory</a>
         </li>
         <li class="links_item">
-            <a href="">Products</a>
+            <a href="form" (click)="goToForm()">Form</a>
         </li>
         <li class="links_item">
-            <button>sign up</button>
+            <a class="buton" href="">sign up</a>
         </li>
     </ul>
 </nav>

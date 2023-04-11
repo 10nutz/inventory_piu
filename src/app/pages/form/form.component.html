@@ -1,0 +1,28 @@
+<div class="main">
+<div class="titlu">
+    Te rugam sa introduci produsul.
+  </div>
+<div class="Form" [formGroup]="form">
+  <p>
+    <mat-form-field appearance="fill">
+        <mat-label>Nume</mat-label>
+        <input matInput type="text" formControlName="name">
+        <mat-hint>Hint:Pizza</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="fill">
+        <mat-label>Descriere</mat-label>
+        <input matInput type="text" formControlName="descriere">
+        <mat-hint>Hint: cu peperoni</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="fill">
+        <mat-label>Cantitate</mat-label>
+        <input matInput type="text" formControlName="cantitate">
+        <mat-hint>Hint: 2</mat-hint>
+      </mat-form-field>
+    </p>
+</div>
+</div>

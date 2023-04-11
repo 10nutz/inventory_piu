@@ -1,0 +1,94 @@
+.body{
+    background-color: grey;
+}
+.button_add {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    padding-top: 80px;
+}
+
+.button_add button {
+    margin-left: 20px;
+}
+
+.button_add :first-child {
+    background-color: hsla(23, 100%, 50%, 0.951);
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.button_add :hover{
+    background-color: white;
+    color: black;
+
+}
+
+.items {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background: grey;
+}
+
+.item {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    max-width: 300px;
+    background:  hsla(23, 100%, 50%, 0.951);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.quantity {
+    font-size: 17px;
+    color: black;
+}
+
+.description {
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.buttons button {
+    margin-left: 20px;
+}
+
+.buttons :last-child {
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px; 
+}
+
+.buttons :first-child {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.buttons :hover{
+    background-color: white;
+    color: black;
+
+}
+
