@@ -4,7 +4,7 @@
         <span [className]="isActive? 'bar2 isActive' : 'bar2'"  ></span>
         <span [className]="isActive? 'bar3 isActive' : 'bar3'"  ></span>
     </a>
-    <a id="logo" href="">NeXT</a>
+    <a id="logo" href="">Switch.ro</a>
     <ul class="links" [className]="isActive? 'links isActive' : 'links'">
         <li class="links_item">
             <a href="">Home</a>
@@ -13,10 +13,7 @@
             <a href = "inventory" (click)="goToInventory()">Inventory</a>
         </li>
         <li class="links_item">
-            <a href="form" (click)="goToForm()">Form</a>
-        </li>
-        <li class="links_item">
-            <a class="buton" href="">sign up</a>
+            <a class="buton" (click)="goToContact()">contact us</a>
         </li>
     </ul>
 </nav>

@@ -1,11 +1,11 @@
 .body{
-    background-color: grey;
+    background-color: white;
 }
 .button_add {
     display: flex;
     flex-direction: row;
     margin-right: 20px;
-    padding-top: 80px;
+    padding-top: 120px;
 }
 
 .button_add button {
@@ -13,7 +13,7 @@
 }
 
 .button_add :first-child {
-    background-color: hsla(23, 100%, 50%, 0.951);
+    background-color: #34c85a;
     color: white;
     border-radius: 10px;
     padding: 5px 10px;
@@ -32,7 +32,7 @@
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    background: grey;
+    background: white;
 }
 
 .item {
@@ -42,7 +42,7 @@
     padding: 10px;
     align-items: center;
     max-width: 300px;
-    background:  hsla(23, 100%, 50%, 0.951);
+    background:  #34c85a;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

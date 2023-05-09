@@ -1,0 +1,22 @@
+<div class="form" [formGroup]="form">
+    <h1>Contact us</h1>
+    <mat-form-field appearance="fill">
+        <mat-label>First Name</mat-label>
+        <input matInput type="text" formControlName="fname" placeholder="First Name" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Second Name</mat-label>
+        <input matInput type="text" formControlName="sname" placeholder="Second Name" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput type="text" formControlName="email" placeholder="Email" required>
+    </mat-form-field>
+
+    <mat-form-field>
+        <textarea matInput name="questionText" formControlName="question" cols="35" rows="8" placeholder="Your text here" required></textarea>
+    </mat-form-field>
+    <button class="buton" (click)="sendQuestion()">Send</button>
+</div>

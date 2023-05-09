@@ -1,0 +1,59 @@
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.form {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+mat-form-field {
+    width: 500px;
+}
+
+h1 {
+    font-size: 35px;
+    color: #34c85a;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.buton{
+    background-color:#34c85a;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+.buton:hover{
+    background-color: white;
+    color: white;
+}
+
+.form .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::after{
+    border-bottom-color:white;
+}
+
+
+.form .mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
+	color: white !important;
+}
+
+.form .mdc-text-field .mdc-text-field__input{
+    caret-color: white !important;
+    
+}
+
+

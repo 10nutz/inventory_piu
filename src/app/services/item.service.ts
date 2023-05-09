@@ -8,27 +8,27 @@ import { Item } from 'src/models/item';
 })
 export class ItemService {
 
-  readonly basUrl = "https://loclahost:44385/api/item/"
+  readonly basUrl = "http://localhost:8081/api/"
   constructor(public httpClient: HttpClient) { }
 
   getItems(): Observable<Item[]>{
-    return this.httpClient.get(this.basUrl + "get") as Observable<Item[]>;
+    return this.httpClient.get(this.basUrl + "items") as Observable<Item[]>;
   }
 
   getItemById(id: number): Observable<Item>{
-    return this.httpClient.get(this.basUrl + "getItems/" + id) as Observable<Item>;
+    return this.httpClient.get(this.basUrl + "items/" + id) as Observable<Item>;
   }
 
-  // postItem(items: Items): Observable<Items>{
-  //   return this.httpClient.delete(this.basUrl + "edit/" + id) as unknown as Observable<null>;
-  // }
+  postItem(item: Item): Observable<Item>{
+    return this.httpClient.post(this.basUrl + "create", item) as unknown as Observable<Item>;
+  }
 
   deleteItem(id: number): Observable<null>{
-    return this.httpClient.delete(this.basUrl + "delete/" + id) as unknown as Observable<null>;
+    return this.httpClient.delete(this.basUrl + "item_delete/" + id) as unknown as Observable<null>;
   }
 
   editItem(item: Item): Observable<null>{
-    return this.httpClient.put(this.basUrl + "edit/" + item.id, item) as unknown as Observable<null>;
+    return this.httpClient.put(this.basUrl + "item_update/" + item.id, item) as unknown as Observable<null>;
   }
 }
 

@@ -1,5 +1,5 @@
 .main{
-    background: grey;
+    background-color:white
 }
 
 .imagine{
@@ -17,20 +17,20 @@
 #p1{
     font-size: 30px;
     font-family: 'Times New Roman';
-    color : hsla(23, 100%, 50%, 0.951);
+    color : #34c85a;
     line-height: 0px;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 #p2{
     font-size: 25px;
-    color: hsla(23, 100%, 50%, 0.951);
+    color: #34c85a;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 #p3{
     font-size: 35px;
-    color: white;
+    color: rgba(0, 0, 0, 0.853);
 }
 
 .text > button{
@@ -45,7 +45,7 @@
     width: 100px;
     height: 50px;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
-    background: linear-gradient(to right, #3c3c3c 50%, hsla(23, 100%, 50%, 0.951) 50%);
+    background: linear-gradient(to right, #3c3c3c 50%, #34c85a 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all .5s ease-out;

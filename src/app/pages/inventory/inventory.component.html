@@ -1,18 +1,17 @@
-
-<h1>{{error}}</h1>
-<div class="body">
+ <div class="body">
 <div class="button_add">
-    <button mat-raised-button class="add_item" (click)="openDialog()">add item</button>
+    <button mat-raised-button class="add_item" (click)="openDialog(1)">add item</button>
 </div>
 <div class="items">
-    <div *ngFor="let item of items" class="item">
-        <p class="name">Nume: {{item}}</p>
-        <p class="quantity">Cantitate: {{item}}</p>
-        <p claas="description">Descriere: {{item}}</p>
+    <div *ngFor="let item of itemList" class="item">
+        <p class="name">Name: {{item.name}}</p>
+        <p class="quantity">Description: {{item.description}}</p>
+        <p claas="description">Quantity: {{item.quantity}}</p>
         <div class="buttons">
-            <button mat-raised-button class="delete">delete</button>
-            <button mat-raised-button class="edit">edit</button>
+            <button mat-raised-button class="delete" (click)="deleteItem(item.id)">delete</button>
+            <button mat-raised-button class="edit" (click)="openDialog(item.id)">edit</button>
         </div>
     </div>
 </div>
 </div>
+<h1>{{error}}</h1> 

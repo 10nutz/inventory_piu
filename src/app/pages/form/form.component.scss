@@ -8,16 +8,39 @@
 .titlu{
     padding-top: 20px;
     text-align: center;
-    font-size: 35px;
+    font-size: 20px;
     color: white;
 }
-.Form{
+.form{
     padding-top: 20px;
     text-align: center;
 }
-.Form .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::after{
-    border-bottom-color:hsla(23, 100%, 50%, 0.951);
+.form .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::after{
+    border-bottom-color:white;
 }
-.Form .mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
-	color: hsla(23, 100%, 50%, 0.951) !important;
+.form .mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
+	color: white !important;
+}
+
+.button_add {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.button_add button {
+    margin-left: 165px;
+}
+
+.button_add :first-child {
+    background-color: #34c85a;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.button_add :hover{
+    background-color: white;
+    color: black;
+
 }

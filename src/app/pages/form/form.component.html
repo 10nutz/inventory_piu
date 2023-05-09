@@ -2,27 +2,30 @@
 <div class="titlu">
     Te rugam sa introduci produsul.
   </div>
-<div class="Form" [formGroup]="form">
+<div class="form" [formGroup]="form">
   <p>
     <mat-form-field appearance="fill">
-        <mat-label>Nume</mat-label>
+        <mat-label>Name</mat-label>
         <input matInput type="text" formControlName="name">
-        <mat-hint>Hint:Pizza</mat-hint>
+        <mat-hint>Hint:Iphone</mat-hint>
       </mat-form-field>
     </p>
     <p>
       <mat-form-field appearance="fill">
-        <mat-label>Descriere</mat-label>
-        <input matInput type="text" formControlName="descriere">
-        <mat-hint>Hint: cu peperoni</mat-hint>
+        <mat-label>Description</mat-label>
+        <input matInput type="text" formControlName="description">
+        <mat-hint>Hint:Galaxy</mat-hint>
       </mat-form-field>
     </p>
     <p>
       <mat-form-field appearance="fill">
-        <mat-label>Cantitate</mat-label>
-        <input matInput type="text" formControlName="cantitate">
+        <mat-label>Quantity</mat-label>
+        <input matInput type="text" formControlName="quantity">
         <mat-hint>Hint: 2</mat-hint>
       </mat-form-field>
     </p>
+      <div class="button_add">
+          <button mat-raised-button class="add_item" (click)="SaveNewItem()">save</button>
+      </div>
 </div>
 </div>

@@ -20,7 +20,7 @@ export class HeaderComponent {
     this.router.navigate(['inventory'])
   }
 
-  goToForm(): void{
-    this.router.navigate(['form'])
+  goToContact(): void{
+    this.router.navigate(['contact'])
   }
 }

@@ -1,6 +1,6 @@
 .navbar{
   list-style-type: none;
-  background-color: #3c3c3c;
+  background-color: rgba(0, 0, 0, 0.853);
   overflow: hidden;
   justify-content: space-between;
   margin: 0%;
@@ -9,6 +9,8 @@
   right: 0;
   left: 0;
   z-index: 2;
+  display: flex;
+  align-items: center;
 }
 
 .links{
@@ -28,11 +30,11 @@
 }
 
 .links_item > a:hover{
-    color: hsla(23, 100%, 50%, 0.951);
+    color: #34c85a;
 }
 
 .buton{
-    background-color:hsla(23, 100%, 50%, 0.951);
+    background-color:#34c85a;
     border: none;
     color: white;
     padding: 10px 10px;
@@ -44,13 +46,14 @@
 }
 .buton:hover{
     background-color: white;
-    color: hsla(23, 100%, 50%, 0.951);
+    color: #34c85a;
 }
 
 
 #logo{
-    font-size: 30px;
-    background: -webkit-linear-gradient(hsla(23, 100%, 50%, 0.951), #ffffffb6);
+    font-weight: 900;
+    font-size: 25px;
+    background: -webkit-linear-gradient(#34c85a, grey);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -70,7 +73,7 @@
 .bars .bar1{
     height: 4px;
     width: 100%;
-    background-color:hsla(23, 100%, 50%, 0.951) ;
+    background-color:#34c85a ;
     border-radius: 10px;
     transition: all .4s;
 }
@@ -78,7 +81,7 @@
 .bars .bar2{
     height: 4px;
     width: 100%;
-    background-color:hsla(23, 100%, 50%, 0.951) ;
+    background-color:#34c85a ;
     border-radius: 10px;
     transition: all .4s;
 }
@@ -86,7 +89,7 @@
 .bars .bar3{
     height: 4px;
     width: 100%;
-    background-color:hsla(23, 100%, 50%, 0.951) ;
+    background-color:#34c85a ;
     border-radius: 10px;
     transition: all .4s;
 }
@@ -105,7 +108,7 @@
 
     .links{
         display: none;
-        width: 100%;
+        width: 90%;
         flex-direction: column;
         text-align: center;
     }
